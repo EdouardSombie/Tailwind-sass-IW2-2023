@@ -1,0 +1,9 @@
+@use "fonts" as f; // namespace custom
+
+body {
+	font-family: f.$font1;
+}
+
+img {
+	max-width: 100%;
+}

@@ -1,4 +1,4 @@
-/*! modern-normalize v2.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+@import url("https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=auto"); /*! modern-normalize v2.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 /*
 Document
 ========
@@ -228,6 +228,132 @@ Add the correct display in Chrome and Safari.
 */
 summary {
   display: list-item;
+}
+
+body {
+  font-family: "Istok Web", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.mt-1 {
+  margin-top: 0.5rem !important;
+}
+
+.mb-1 {
+  margin-bottom: 0.5rem !important;
+}
+
+.mt-2 {
+  margin-top: 1rem !important;
+}
+
+.mb-2 {
+  margin-bottom: 1rem !important;
+}
+
+.mt-3 {
+  margin-top: 1.5rem !important;
+}
+
+.mb-3 {
+  margin-bottom: 1.5rem !important;
+}
+
+.mt-4 {
+  margin-top: 2rem !important;
+}
+
+.mb-4 {
+  margin-bottom: 2rem !important;
+}
+
+.mt-5 {
+  margin-top: 2.5rem !important;
+}
+
+.mb-5 {
+  margin-bottom: 2.5rem !important;
+}
+
+.mt-6 {
+  margin-top: 3rem !important;
+}
+
+.mb-6 {
+  margin-bottom: 3rem !important;
+}
+
+:root {
+  --white: #fff;
+  --white-lighter: white;
+  --black: #000;
+  --black-lighter: #4d4d4d;
+  --darkBlue: #1e293a;
+  --darkBlue-lighter: #49648d;
+  --lightBlue: #5d7a97;
+  --lightBlue-lighter: #8ca2b8;
+  --pink: #ff2896;
+  --pink-lighter: #ff69b6;
+  --orange: #ff9b65;
+  --orange-lighter: #ffb993;
+  --darkGreen: #00d5d5;
+  --darkGreen-lighter: #2fffff;
+  --lightGreen: #00ffbf;
+  --lightGreen-lighter: #4dffd2;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: 100%;
+}
+@media screen and (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+@media screen and (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
+.bioCard {
+  width: 20rem;
+  border-radius: 1rem;
+  padding: 2rem;
+  background-color: var(--darkBlue);
+  color: var(--lightBlue);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 0;
+}
+.bioCard__img {
+  border-radius: 100rem;
+  object-fit: cover;
+  object-position: center;
+  aspect-ratio: 1/1;
 }
 
 /*# sourceMappingURL=main.css.map */
