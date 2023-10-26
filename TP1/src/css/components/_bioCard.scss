@@ -67,5 +67,12 @@
 	}
 	&__a {
 		@include m.pillButton(var(--white), var(--pink), false);
+		&--alt {
+			@include m.pillButton(
+				linear-gradient(to bottom, var(--darkGreen) 0%, var(--lightGreen) 100%),
+				var(--black),
+				true
+			);
+		}
 	}
 }
