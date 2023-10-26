@@ -8,10 +8,64 @@
 	padding: f.rem(32);
 	background-color: var(--darkBlue);
 	color: var(--lightBlue);
-	@include m.flexbox(column, nowrap, flex-start, stretch);
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+	@include m.flexbox(column, nowrap, flex-start, center);
 	&__header {
+		position: absolute;
+		top: f.rem(16);
+		right: f.rem(16);
+		left: f.rem(16);
+		@include m.flexbox(row, nowrap, flex-end, center);
 	}
 	&__img {
 		@include m.roundImage(100rem);
+		width: f.rem(176);
+		filter: saturate(0);
+		margin-bottom: f.rem(24);
+	}
+	&__h1 {
+		font-size: f.rem(24);
+		margin-top: 0;
+		margin-bottom: f.rem(12);
+		@include m.textGradient(bottom, var(--pink), var(--orange));
+	}
+	&__h2 {
+		font-weight: 400;
+		font-size: f.rem(20);
+		margin-top: 0;
+		margin-bottom: f.rem(24);
+	}
+	&__hr {
+		border-color: var(--lightBlue);
+		margin-top: 0;
+		margin-bottom: f.rem(16);
+	}
+	&__p {
+		line-height: normal;
+		margin-top: 0;
+		margin-bottom: f.rem(56);
+	}
+	&__footer {
+		position: relative;
+		&::before {
+			content: "";
+			background: linear-gradient(-187deg, var(--orange) 0%, var(--pink) 60%);
+			position: absolute;
+			top: f.rem(-32);
+			left: f.rem(-32);
+			right: f.rem(-32);
+			bottom: f.rem(-64);
+			transform: skewY(7deg);
+		}
+	}
+	&__ul {
+		position: relative;
+		@include m.resetList;
+		@include m.flexbox(row, wrap, center, center, f.rem(24));
+	}
+	&__a {
+		@include m.pillButton(var(--white), var(--pink), false);
 	}
 }
